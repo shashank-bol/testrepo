@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/shashlji/testrepo/issues"
   },
-  "homepage": "https://github.com/shashlji/testrepo#readme"
+  "homepage": "https://github.com/shashlji/testrepo#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
