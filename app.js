@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express() 
 const pool = require('./db')
-pool.connect()
+//pool.connect()
 app.use(express.json())
 app.get('/' , (req,res) =>{
   res.send('<h1>Hello World</h1>')
