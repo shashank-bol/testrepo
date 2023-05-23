@@ -8,8 +8,12 @@ app.get('/' , (req,res) =>{
 })
 
 app.get('/users' , async (req,res) => {
-  const users  = (await pool.query('SELECT * FROM testuser')).rows
-  res.status(200).json({users})
+  try{
+    const users  = (await pool.query('SELECT * FROM testuser')).rows
+    res.status(200).json({users})
+  }catch(error){
+    res.status(500).json({error})
+  }
 })
 
 app.post('/add' , async (req,res) => {
