@@ -5,6 +5,7 @@ const pool = require('./db')
 app.use(express.json())
 app.get('/' , (req,res) =>{
   res.send('<h1>Hello World</h1>')
+  
 })
 
 app.get('/users' , async (req,res) => {
